@@ -126,4 +126,9 @@ h1 {
   position: absolute;
 }
 
+.leaf-vector {
+  width: 100%;
+  max-width: none;
+}
+
 
