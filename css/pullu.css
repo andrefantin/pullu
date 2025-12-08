@@ -50,8 +50,10 @@ h1 {
 }
 
 .contact-text {
+  z-index: 10;
   font-size: 1rem;
   line-height: 1.75rem;
+  position: relative;
 }
 
 .main-panel {
@@ -84,6 +86,7 @@ h1 {
   max-width: 53rem;
   margin-top: 5rem;
   margin-left: 5rem;
+  margin-right: 3.5rem;
   display: flex;
 }
 
@@ -129,6 +132,108 @@ h1 {
 .leaf-vector {
   width: 100%;
   max-width: none;
+}
+
+@media screen and (max-width: 991px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  .main-section {
+    flex-flow: column;
+  }
+
+  .side-panel {
+    justify-content: center;
+    align-items: flex-start;
+    width: 100dvw;
+    height: 20dvh;
+    padding-top: 0;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .illustration {
+    position: absolute;
+    inset: 0% 0% auto auto;
+  }
+
+  .text-wrapper-side-panel {
+    position: relative;
+  }
+
+  .main-panel {
+    flex: 1;
+  }
+
+  .pullu-logo {
+    margin-left: 3.5rem;
+  }
+
+  .copy-wrapper {
+    margin-top: 2rem;
+    margin-left: 3.5rem;
+    margin-right: 3.5rem;
+  }
+
+  .services-flex {
+    margin-top: 2.5rem;
+  }
+
+  .accent-vector {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .text-wrapper-side-panel, .pullu-logo {
+    margin-left: 2rem;
+  }
+
+  .copy-wrapper {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  .main-panel {
+    flex: 1;
+  }
+
+  .pullu-logo {
+    margin-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .lottie-wrapper {
+    min-width: 200dvw;
+    bottom: -2rem;
+  }
+
+  .copy-wrapper {
+    margin-top: 1rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+  }
+
+  .pullu {
+    min-width: 80dvw;
+    max-width: 100%;
+  }
+
+  .services-flex {
+    grid-column-gap: 2rem;
+    grid-row-gap: 2rem;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 1.5rem;
+  }
 }
 
 
